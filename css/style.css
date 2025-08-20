@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+body{
+    height: 100vh;
+    background-image:linear-gradient(to top, purple, red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1, h2{
+    color: white;
+    font-weight: bolder;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+#calcular{
+    background-color: aliceblue;
+    width: 45vw;
+    padding: 3em;
+    margin: 15px 0px;
+    border-radius: 10px;
+    display:grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 50%);
+    gap: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+label{
+    grid-area: 1;
+    width: 13vw;
+    margin: auto;
+}
+input{
+    grid-area: 2;
+    width: 10vw;
+    height: 4vh;
+    margin: auto;
+    padding: 5px;
+}
+button{
+    grid-area: 3;
+    display: block;
+    width: 20vw;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin: 0 auto;
+    
+}
+#tabuada{
+    background-color: aliceblue;
+    margin: 15px 0px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#p-tabuada, #p-tabuada1{
+    display: none;
+    border: 1px solid black;
+    width: 20vw;
+    margin: 0 auto;
+    border-bottom: none;
+}   
+#p-tabuada1:last-child{
+    border-bottom: 1px solid black;
+}
